@@ -1,0 +1,161 @@
+*{
+margin: 0;
+padding: 0;  
+}
+
+.pokemoncontainer{
+display: inline-grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+right: 70%px;
+color: rgb(42, 41, 41);
+margin-top: -250px;
+position: absolute;   
+top: 350px;
+right: 20%;
+}
+.container{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    min-height:100vh;
+    height: 100%;
+    background-color: #282828;
+    justify-content: space-between;
+    position: absolute;
+    min-width: 100%;
+}
+
+.pokebola{
+   position: relative;
+   right: 910px;
+   top:-39px;
+}
+
+.navbar2{
+   /* background-color:hsl(210 10% 23%); */
+   /* height: 500px; */
+   background-color: #212121; 
+   width: 1900px;
+   position: relative;
+   top: -5px;
+ }
+.select1{
+border: 4px solid #363535;
+ border-radius: 5px;
+ background-color: #e1e1e1;
+
+}
+.select2{
+   border: 4px solid #363535;
+   border-radius: 5px;
+   background-color: #e1e1e1;
+}
+.select3{
+   border: 4px solid #363535;
+ border-radius: 5px;
+ background-color: #e1e1e1;
+ /* transform: translate(1px,30px); */
+}
+.hr{
+   width: 100%;
+    position: relative;
+    top: 7px;
+}
+
+.pokemon{
+  width: 200px;
+  height: 200px;
+  /* transform: translate(780%,-105%); */
+  cursor: pointer;
+position: absolute;
+left: 1650px;
+top: -59px;
+
+}
+
+
+
+.botonCreate{
+   width: 140px;
+ height: auto;
+ float: left;
+ transition: .5s linear;
+ position: relative;
+ display: block;
+ overflow: hidden;
+ padding: 15px;
+ text-align: center;
+ margin: 0 5px;
+ background: transparent;
+ text-transform: uppercase;
+ font-weight: 900;
+}
+
+.botonCreate:before {
+ position: absolute;
+ content: '';
+ left: 0;
+ bottom: 0;
+ height: 4px;
+ width: 100%;
+ border-bottom: 4px solid transparent;
+ border-left: 4px solid transparent;
+ box-sizing: border-box;
+ transform: translateX(100%);
+}
+
+.botonCreate:after {
+ position: absolute;
+ content: '';
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 4px;
+ border-top: 4px solid transparent;
+ border-right: 4px solid transparent;
+ box-sizing: border-box;
+ transform: translateX(-100%);
+}
+
+.botonCreate:hover {
+ box-shadow: 0 5px 15px rgba(255, 251, 251, 0.5);
+}
+
+.botonCreate:hover:before {
+ border-color: #fefbfb;
+ height: 100%;
+ transform: translateX(0);
+ transition: .3s transform linear, .3s height linear .3s;
+}
+
+.botonCreate:hover:after {
+ border-color: #fdfafa;
+ height: 100%;
+ transform: translateX(0);
+ transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+ color: rgb(254, 254, 254);
+ text-decoration: none;
+ cursor: pointer;
+ outline: none;
+ border: none;
+ background: transparent;
+  }
+
+  .botonCreate{
+   position: absolute;
+   top: 10px;
+   right: 1200px;
+}
+
+
+.pokeGift{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transform: translate(-630px,200px); 
+}
+

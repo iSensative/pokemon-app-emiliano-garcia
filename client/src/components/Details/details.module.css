@@ -1,0 +1,246 @@
+.card{
+   width: 500px;
+   height: 600px;
+   background-color: black;
+   /* text-align:center */
+   display: flex;
+   justify-content: center;
+   border-radius: 15px;
+   position: absolute;
+   background-image: url('../../assets/0e33fe5453212681ee50bd617e8ab9f8.jpg');
+   background-repeat: no-repeat;
+   display:inline-table;
+   right: 700px;
+   top: 170px;
+   }
+   
+   
+   .card2{
+    background-color: aqua;
+    width: 320px;
+    height: 400px;
+   margin: 0px auto;
+   margin-top:100px;
+   border-radius: 7px;
+   background-color: #efefdf
+   }
+   
+   .name{
+   position: relative;
+   font-size: 19px;
+   top: 50px;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 15px;
+   left: 7px;
+   }
+   .type{
+       position:relative;
+      top: 105px; 
+      left: 100px;
+      font-weight: bold;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 9px;
+   }
+   
+   .parrafohp{
+    position: relative;
+    top: 117px;
+    font-weight: bold;
+    left: -1px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+   }
+   
+   .altura{
+       position: relative;
+       left: -100px;
+       top: 93px;
+       font-weight: bold;
+       font-family: 'Press Start 2P', cursive;
+       font-size: 10px;
+   }
+   
+   .hp{
+       position: relative;
+     top: 42px;
+     font-size: 12px;
+     font-weight: bold;
+     font-family: 'Press Start 2P', cursive;
+     font-size: 10px;
+     right: -5px;
+   }
+   .hr{
+       position: relative;
+       top: 100px;
+   }
+   
+   .img{
+       width: 100px;
+       height: 130px;
+       position: relative;
+       top: -200px;
+       left: 35px;
+   }
+   
+   
+   .vida{
+    position: relative;
+    top: -127px;   
+    right: 90px;
+   }
+   
+   .stats{
+    position: relative;
+    top: -18px;
+    right: 5px;
+    width: 290px;
+   }
+
+   .containersupremo{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    max-width: 100%;
+    text-align:center
+   }
+
+   .attack{
+   position: relative;
+   top: 47px; 
+   font-size: 10px;
+   right: 100px;
+   font-family: 'Press Start 2P', cursive;
+   font-weight: bold;
+   }
+
+   .defense{
+    position: relative;
+    top: 57px;
+    right: -100px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+   }
+
+   .weight{
+   position: relative;
+   top: 50px; 
+   font-weight: bold;
+   font-family: 'Press Start 2P', cursive;
+   }
+
+   .backimg{
+   position: relative;
+   top: -205px; 
+   width: 100px;
+   height: 130px;
+   right: -65px;
+   }
+
+   .conteiner{
+   background-color: #282828;
+   width: 100%;
+   height: 100vh;
+   overflow:hidden;
+   text-align: center;
+   margin:auto;
+   }
+
+   .navbar{
+   width:100%;
+   height: 50px;
+   background-color: #212121; 
+   }
+
+   .botoncito{
+    width: 140px;
+  height: auto;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.botoncito:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.botoncito:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.botoncito:hover {
+  box-shadow: 0 5px 15px rgba(255, 251, 251, 0.5);
+}
+
+.botoncito:hover:before {
+  border-color: #fefbfb;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.botoncito:hover:after {
+  border-color: #fdfafa;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+  color: rgb(254, 254, 254);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+   }
+
+   .botoncito{
+position: relative;
+top: -50px;
+   }
+
+
+   .navbar2{
+   width: 100%;
+   background-color: aqua;
+   position: relative;
+   top:750px;
+   height: 200px;
+   background-color: #212121;
+   }
+
+   .nameNav{
+   color: white; 
+   }
+   .copy{
+   color:white; 
+   }

@@ -1,0 +1,97 @@
+.card{
+ width: 260px;
+ height: 395px;
+ background-color: black;
+ /* text-align:center */
+ display: flex;
+justify-content: center;
+border-radius: 7px;
+position: absolute;
+background-image: url('../../assets/descarga.jpg');
+}
+
+
+.card2{
+ background-color: aqua;
+ width: 240px;
+ height: 295px;
+ /* margin:0px auto; */
+margin-top:100px;
+border-radius: 7px;
+background-color: #efefdf
+}
+
+.name{
+position: relative;
+font-size: 19px;
+top: 25px;
+font-family: 'Press Start 2P', cursive;
+font-size: 14px;
+left: 7px;
+}
+.type{
+    position:relative;
+   top: 80px; 
+   left: 70px;
+   font-weight: bold;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 9px;
+}
+
+.parrafohp{
+ position: relative;
+ top: 89px;
+ font-weight: bold;
+ left: -10px;
+ font-family: 'Press Start 2P', cursive;
+ font-size: 9px;
+}
+
+.altura{
+    position: relative;
+    left: -70px;
+    top: 70px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+.hp{
+    position: relative;
+  top: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  right: -5px;
+}
+.hr{
+    position: relative;
+    top: 70px;
+}
+
+.img{
+    width: 100px;
+    height: 130px;
+    position: relative;
+    top: -190px;
+    left: 50px;
+}
+
+.conteiner{
+    width: 290px;
+    height: 400px;
+}
+
+.vida{
+ position: relative;
+ top: -120px;   
+ right: 47px;
+}
+
+.stats{
+ position: relative;
+ top: -60px;
+ right: 5px;
+ width: 255px;
+}

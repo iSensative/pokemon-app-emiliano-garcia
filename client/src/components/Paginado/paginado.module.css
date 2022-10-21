@@ -1,0 +1,17 @@
+
+
+.pageitem{
+   background-color: rgb(41, 40, 40);
+   display:inline;
+   padding: 5px;
+   border: 2px solid #494848;
+   font-size: 2px;
+}
+.paginado{
+   transform: translate(-2%,-855px); 
+}
+
+
+.pagelink{
+color: rgb(243, 243, 243);
+}
