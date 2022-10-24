@@ -1,7 +1,7 @@
 import React from 'react'
 import{useState,useEffect} from 'react'
 import{useDispatch,useSelector}from 'react-redux'
-import { getPokemons,filterAlf,getFilter,filterTypes, getTypes,dataBase} from '../../actions'
+import { getPokemons,filterAlf,getFilter,filterTypes, getTypes,dataBase, resetDetails} from '../../actions'
 import Card from '../Card/Card'
 import styles from './home.module.css'
 import Paginado from '../Paginado/Paginado'
@@ -19,12 +19,13 @@ const dispatch=useDispatch()
 const allPokemons=useSelector(state=>state.pokemonsfilter)
 const[currentPage,setCurrentPage]=useState(1)
 const[postPerPage,setPostPerPage]=useState(8)
-
+const details=useSelector(state=>state.details)
 
 useEffect(()=>{
 dispatch(getPokemons())
 dispatch(getFilter())
 dispatch(getTypes())
+dispatch(resetDetails())
 },[])
 
 
@@ -109,8 +110,8 @@ return(
  }):<img className={styles.pokeGift} src={giftPoke} alt="Image not found" />
 }
 </div>
-
+{console.log(details)}
+{console.log(paginate)}
 <Paginado className={styles.paginado} gamesPerPage={postPerPage} totalGames={allPokemons?.length} paginate={paginate} />
  </div>
-
 )}

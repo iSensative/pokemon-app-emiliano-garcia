@@ -85,9 +85,22 @@ export function postPokemon(payload){
 export function getDetail(id){
 return async function(dispatch){
 let json=axios.get(`https://pokemon-app-emiliano-garcia-production.up.railway.app/pokemon/${id}`)
+if(!id){
+  return dispatch({
+  type:'GET_DETAILS',
+  payload:[] 
+  }) 
+ }
 return dispatch({
  type:'GET_DETAIL',
  payload:(await json).data,
 })  
+}
+}
+
+
+export function resetDetails(){
+return{
+ type:'RESET_DETAILS', 
 }
 }

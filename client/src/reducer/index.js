@@ -83,7 +83,12 @@ case 'GET_POKEMON_BY_NAME':
    ...state,
    details:payload 
   }
-
+ 
+ case'RESET_DETAILS':
+ return{
+ ...state,
+details:[]
+}
     default:
       return state;
   }
