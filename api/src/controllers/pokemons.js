@@ -145,6 +145,23 @@ typeDb=await Types.findAll({
  await createPokemon.addTypes(typeDb)//Aca lo que hacemos es agregarle el Type del pokemon.
   res.send('Pokemon creado con exito')
 
+},
+
+deletePokemon:async(req,res)=>{
+try {
+  const id=req.params.id
+  console.log(id)
+const pokemons=await Pokemon.findAll()
+await Pokemon.destroy({
+  where:{id:id}
+})
+res.status(200).send(pokemons)
+} catch (error) {
+  res.send(error.message)
 }
+}
+
+
+
 
 };

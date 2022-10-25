@@ -10,5 +10,6 @@ router.get('/pokemons',rutaPokemons)
 router.get('/pokemon/:id',rutaPokemonsId)
 router.get('/types',getAllTypes)
 router.post('/postpokemon',postPokemon)
+router.delete('/deletePokemon/:id',deletePokemon)
 
 module.exports = router;

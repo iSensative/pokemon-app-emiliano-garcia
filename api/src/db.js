@@ -8,10 +8,8 @@ const {DB_USER, DB_PASSWORD, DB_HOST,DB_DATABASE,DB_PORT} = process.env;
 
 
 
-
-
-
-
+let cors = require('cors')
+app.use(cors())
 
 const dataBase=`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`
 console.log(dataBase)
