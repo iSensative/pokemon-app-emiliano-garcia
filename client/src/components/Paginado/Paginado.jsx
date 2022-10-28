@@ -8,7 +8,6 @@ export default function Paginado({ gamesPerPage, totalGames, paginate }) {
         pageNumbers.push(i)
     }
 // console.log(totalGames)
-// console.log(gamesPerPage)
     return (
         <div className={styles.paginado}>
             <ul>

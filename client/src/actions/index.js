@@ -98,9 +98,27 @@ return dispatch({
 }
 }
 
-
 export function resetDetails(){
 return{
  type:'RESET_DETAILS', 
+}
+}
+
+export function deletePokemon(id){
+  return async function(dispatch){
+let json=axios.delete((`https://pokemon-app-emiliano-garcia-production.up.railway.app/deletePokemon/${id}`))
+return dispatch({
+ type:'DELETE_POKEMON',
+ payload:(await json).data 
+})
+  }
+}
+
+export function resetPage(currentPage){
+return async function (dispatch){
+ return dispatch({
+ type:'RESET_PAGE',
+ payload:currentPage 
+ }) 
 }
 }

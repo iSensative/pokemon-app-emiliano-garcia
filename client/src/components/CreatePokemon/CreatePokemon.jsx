@@ -72,6 +72,11 @@ export default function CreatePokemon() {
     if (!input.defense?.match(/^[0-9]+$/)) return "No se permiten simbolos EN DEFENSE";
     if (!input.weight?.match(/^[0-9]+$/)) return "No se permiten simbolos EN WEIhgt";
     if (!input.height?.match(/^[0-9]+$/)) return "No se permiten simbolos en heigth";
+    if(!input.image){
+     return 'Ingrese una Url Valida'
+    }else if(!/((ftp|https?):\/\/)?(www\.)?[a-z0-9\-\.]{3,}\.[a-z]{3}$/.test(input.image)){
+    return 'Ingrese una direccion de imagen valida'
+    }
   }
 
   const errormessage = validateInput(input);

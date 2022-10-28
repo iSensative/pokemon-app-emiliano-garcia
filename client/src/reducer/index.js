@@ -89,6 +89,12 @@ case 'GET_POKEMON_BY_NAME':
  ...state,
 details:[]
 }
+
+case 'DELETE_POKEMON':
+return{
+ ...state 
+}
+
     default:
       return state;
   }

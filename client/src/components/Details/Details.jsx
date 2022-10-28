@@ -4,7 +4,7 @@ import {useEffect, useState } from "react";
 import axios from "axios";
 import {Link,useParams} from "react-router-dom";
 import styles from './details.module.css'
-import { getDetail, getPokemons } from "../../actions";
+import { deletePokemon, getDetail, getPokemons } from "../../actions";
 import vida from './VIDA.jpeg'
 import stats from './stats.png'
 
@@ -17,6 +17,15 @@ const {id}=useParams()
 const allPokemons=useSelector(state=>state.pokemons)
 const pokemon=useSelector(state=>state.details)
 console.log(pokemon)
+
+function handleDelete(id){
+if(pokemon.createdInDb){
+  dispatch(deletePokemon(id))
+alert('Pokemon Eliminado!')
+}else{
+ return alert('Lo siento,solo se pueden eliminar pokemons creados!') 
+}
+}
 
  useEffect(()=>{
 dispatch(getDetail(id))
@@ -47,6 +56,7 @@ return(
   <img src={vida}alt="Not imagen"width='100px'className={styles.vida}/>
   <img src={stats} alt="Image not found"className={styles.stats} />
   </div>
+  <button onClick={e=>handleDelete(e)}>X</button>
  </div>
  <Link to='/home'>
  <button>

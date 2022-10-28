@@ -22,12 +22,12 @@ background-color: #efefdf
 }
 
 .name{
-position: relative;
+position: absolute;
 font-size: 19px;
-top: 25px;
+top: 140px;
 font-family: 'Press Start 2P', cursive;
 font-size: 14px;
-left: 7px;
+left: 78px;
 color: black;
 }
 .type{

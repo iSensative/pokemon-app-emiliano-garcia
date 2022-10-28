@@ -20,6 +20,12 @@ setInputName(e.target.value.trim())
 
 function handleSubmit(e){
 e.preventDefault()
+if(inputName.length===0){
+   return alert('Ingresa un nombre valido') 
+}
+if(inputName.length===' '){
+return alert('No se permiten espacios') 
+}
  dispatch(getPokemonsbyName(inputName.trim()))   
 }
 
